@@ -24,6 +24,12 @@ public class Main {
         }, "user-2 ");
 
         t1.start();
+        current.displayTransactionHistory();
+        current.displayBalance();
         t2.start();
+        savings.displayTransactionHistory();
+        // Display final balances
+        savings.displayBalance();
+        
     }
 }

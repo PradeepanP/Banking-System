@@ -14,4 +14,9 @@ public class CurrentAccount extends BankAccount{
         balance -= amount;
         System.out.println(amount + " withdrawn. New balance " + balance);
     }
+    @Override
+    public void applyInterest() {
+        // Current accounts typically don't apply interest, so this can be empty or not applicable
+        System.out.println("No interest for Current Account.");
+    }
 }
